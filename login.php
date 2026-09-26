@@ -16,23 +16,17 @@
     <!-- ================= BANNER ================= -->
     <?php include 'banner.php'; ?>
     <div class="login-container">
-        <form action="" method="post">
-            <h1>เข้าสู่ระบบ</h1>
-            <div class="login-container-body">
-                <div class="username">
-                    <h4 for="username">ชื่อผู้ใช้:</h4>
-                    <input type="text" id="username" name="username" placeholder="กรอกชื่อผู้ใช้" required>
-                </div>
-                <div class="password">
-                    <h4 for="password">รหัสผ่าน:</h4>
-                    <input type="password" id="password" name="password" placeholder="รหัสผ่าน" required>
-                </div>
+        <h1>เข้าสู่ระบบ</h1>
+        <div class="login-container-body">
+            <div class="username">
+                <h4 for="username">ชื่อผู้ใช้:</h4>
+                <input type="text" id="username" name="username" placeholder="กรอกชื่อผู้ใช้" required>
             </div>
-            <div class="login-container-bottom">
-                <input type="reset" class="btn-cancel" value="ยกเลิก">
-                <input type="submit" class="btn-submit" value="ตกลง">
+            <div class="password">
+                <h4 for="password">รหัสผ่าน:</h4>
+                <input type="password" id="password" name="password" required>
             </div>
-        </form>
+        </div>
     </div>
     <!-- ================= FOOTER ================= -->
     <?php include 'footer.php'; ?>
