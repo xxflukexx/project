@@ -11,81 +11,44 @@ body {
 
 /* ================= HEADER ================= */
 .header {
-    background: #f26100;
-    height: 90px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  background: #f26100;
+  height: 90px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .header-container {
-    max-width: 1200px;
-    height: 100%;
-
-    margin: auto;
-
-    padding: 0 25px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
 }
 
-
-/* ================= ฝั่งซ้าย ================= */
-
 .brand {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .logo {
-    width: 65px;
-    height: 65px;
-    object-fit: contain;
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
 }
 
 .brand-text h1 {
-    margin: 0;
-
-    color: white;
-
-    font-size: 25px;
-    font-weight: 700;
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .brand-text p {
-    margin: 2px 0 0;
-
-    color: white;
-
-    font-size: 15px;
-}
-
-
-/* ================= ฝั่งขวา ================= */
-
-.user {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    color: white;
-}
-
-.user img {
-    width: 42px;
-    height: 42px;
-
-    border-radius: 50%;
-
-    object-fit: cover;
-}
-
-.user p {
-    margin: 0;
-
-    font-size: 16px;
-    font-weight: 500;
+  margin: 2px 0 0;
+  color: white;
+  font-size: 15px;
 }
 
 /* ================= NAVBAR ================= */
@@ -388,7 +351,6 @@ nav {
   height: 450px;
   width: 760px;
   margin: 50px auto;
-  margin-bottom: 80px;
   padding: 30px;
   background-color: #fff;
   border-radius: 28px;
@@ -463,8 +425,6 @@ nav {
   color: #000;
 }
 
-
-
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1000px) {
   .timeline {
@@ -526,4 +486,195 @@ nav {
   .timeline-card {
     flex: 1;
   }
+}
+
+/* =========================
+   REGISTER PAGE
+========================= */
+
+.register-page {
+    background: #f5f6ff;
+    min-height: 650px;
+    padding: 35px 20px;
+}
+
+.register-box {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+
+    background: white;
+
+    padding: 25px 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.register-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* 2 ช่องในแถวเดียว */
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* กลุ่มช่อง */
+
+.form-group {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+
+/* ช่องกรอก */
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Radio */
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Upload */
+
+.upload-box {
+    border: 1px dashed #ff6600;
+
+    border-radius: 10px;
+
+    min-height: 130px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5px;
+}
+
+.upload-icon {
+    font-size: 35px;
+    color: #9da5b4;
+}
+
+.upload-box p {
+    margin: 5px 0 10px;
+}
+
+.upload-box input[type="file"] {
+    width: auto;
+    border: none;
+}
+
+
+/* ปุ่ม */
+
+.form-button {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 10px;
+}
+
+.form-button button {
+    background: #ff6600;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 10px 22px;
+
+    cursor: pointer;
+}
+
+
+/* ปุ่มย้อนกลับ */
+
+.form-button .back-button {
+    background: white;
+
+    color: #555;
+
+    border: 1px solid #ddd;
+
+    margin-right: 10px;
+}
+
+
+/* มือถือ */
+
+@media (max-width: 600px) {
+
+    .form-row {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    .register-box {
+        width: 95%;
+
+        padding: 20px;
+    }
+
+}
+.form-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-link {
+    margin-right: auto;
+    color: #aca5a1;
+    text-decoration: none;
+    font-size: 14px;
 }
