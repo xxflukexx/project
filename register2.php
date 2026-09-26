@@ -15,15 +15,13 @@
 
     <?php include 'navbar.php'; ?>
 
-
     <div class="register-page">
 
         <div class="register-box">
 
             <h2>ข้อมูลการศึกษา</h2>
 
-            <form>
-
+            <form action="register3.php" method="post">
 
                 <!-- ชื่อสถานศึกษา -->
                 <div class="form-group">
@@ -135,23 +133,19 @@
                 <!-- ปุ่ม -->
                 <div class="form-button">
 
-                    <button
-                        type="button"
-                        class="back-button"
-                        onclick="location.href='register.php'">
+                    <div class="button-group">
 
-                        ย้อนกลับ
+                        <a
+                            href="register.php"
+                            class="back-button">
+                            ย้อนกลับ
+                        </a>
 
-                    </button>
+                        <button type="submit">
+                            ถัดไป
+                        </button>
 
-
-                    <button
-                        type="button"
-                        onclick="location.href='register3.php'">
-
-                        ถัดไป
-
-                    </button>
+                    </div>
 
                 </div>
 
@@ -160,7 +154,6 @@
         </div>
 
     </div>
-
 
     <?php include 'footer.php'; ?>
 

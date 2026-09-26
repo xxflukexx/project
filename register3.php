@@ -15,15 +15,13 @@
 
     <?php include 'navbar.php'; ?>
 
-
     <div class="register-page">
 
         <div class="register-box">
 
             <h2>ข้อมูลการสมัคร</h2>
 
-            <form>
-
+            <form action="register4.php" method="post">
 
                 <!-- คณะ -->
                 <div class="form-group">
@@ -121,7 +119,7 @@
                 </div>
 
 
-                <!-- เอกสาร -->
+                <!-- สาขาลำดับที่สอง -->
                 <div class="form-group">
 
                     <label>เลือกสาขาลำดับที่สอง</label>
@@ -141,7 +139,7 @@
                         </option>
 
                         <option>
-                           สาขาเทคโนโลยีเครื่องกลและกระบวนการผลิต
+                            สาขาเทคโนโลยีเครื่องกลและกระบวนการผลิต
                         </option>
 
                     </select>
@@ -152,23 +150,19 @@
                 <!-- ปุ่ม -->
                 <div class="form-button">
 
-                    <button
-                        type="button"
-                        class="back-button"
-                        onclick="location.href='register2.php'">
+                    <div class="button-group">
 
-                        ย้อนกลับ
+                        <a
+                            href="register2.php"
+                            class="back-button">
+                            ย้อนกลับ
+                        </a>
 
-                    </button>
+                        <button type="submit">
+                            ถัดไป
+                        </button>
 
-
-                  <button
-    type="button"
-    onclick="location.href='register4.php'">
-
-    ถัดไป
-
-</button>
+                    </div>
 
                 </div>
 
@@ -177,7 +171,6 @@
         </div>
 
     </div>
-
 
     <?php include 'footer.php'; ?>
 

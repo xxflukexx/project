@@ -491,7 +491,10 @@ nav {
 /* =========================
    REGISTER PAGE
 ========================= */
-
+body {
+    margin: 0;
+    font-family: "Sarabun", sans-serif;
+}
 .register-page {
     background: #f5f6ff;
     min-height: 650px;
@@ -613,37 +616,58 @@ nav {
 
 .form-button {
     display: flex;
-
-    justify-content: flex-end;
-
+    align-items: center;
+    width: 100%;
     margin-top: 10px;
+}
+
+.form-button .button-group {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.form-button button,
+.form-button .back-button {
+    width: 90px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0;
+    border-radius: 7px;
+    text-align: center;
 }
 
 .form-button button {
     background: #ff6600;
-
     color: white;
-
     border: none;
-
-    border-radius: 7px;
-
-    padding: 10px 22px;
-
     cursor: pointer;
+
+    /* เงาให้ดูมีมิติ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.20);
+    transition: all 0.2s ease;
 }
 
+.form-button button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
 
-/* ปุ่มย้อนกลับ */
+.form-button button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.20);
+}
 
 .form-button .back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: white;
-
     color: #555;
-
     border: 1px solid #ddd;
-
-    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -664,14 +688,6 @@ nav {
     }
 
 }
-.form-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 10px;
-}
-
 .login-link {
     margin-right: auto;
     color: #aca5a1;

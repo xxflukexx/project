@@ -10,137 +10,176 @@
 </head>
 
 <body>
-<?php include 'header.php'; ?>
 
-<?php include 'navbar.php'; ?>
+    <?php include 'header.php'; ?>
+
+    <?php include 'navbar.php'; ?>
+
+    <div class="register-page">
+
+        <div class="register-box">
+
+            <h2>สมัครนักศึกษา</h2>
+
+            <form action="register2.php" method="get">
+
+                <!-- ชื่อ - นามสกุล -->
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>ชื่อ</label>
+                        <input
+                            type="text"
+                            placeholder="ชื่อ">
+                    </div>
+
+                    <div class="form-group">
+                        <label>นามสกุล</label>
+                        <input
+                            type="text"
+                            placeholder="นามสกุล">
+                    </div>
+
+                </div>
 
 
-<div class="register-page">
-
-    <div class="register-box">
-
-        <h2>สมัครนักศึกษา</h2>
-        <form action="register2.php" method="get">>
-
-            <div class="form-row">
-
+                <!-- อีเมล -->
                 <div class="form-group">
-                    <label>ชื่อ</label>
-                    <input type="text" placeholder="ชื่อ">
+                    <label>อีเมล</label>
+                    <input
+                        type="email"
+                        placeholder="example@gmail.com">
                 </div>
 
+
+                <!-- รหัสผ่าน -->
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>รหัสผ่าน</label>
+                        <input
+                            type="password"
+                            placeholder="รหัสผ่าน">
+                    </div>
+
+                    <div class="form-group">
+                        <label>ยืนยันรหัสผ่าน</label>
+                        <input
+                            type="password"
+                            placeholder="ยืนยันรหัสผ่าน">
+                    </div>
+
+                </div>
+
+
+                <!-- เบอร์โทร -->
                 <div class="form-group">
-                    <label>นามสกุล</label>
-                    <input type="text" placeholder="นามสกุล">
+                    <label>เบอร์โทร</label>
+                    <input
+                        type="tel"
+                        placeholder="000-000-0000">
                 </div>
 
-            </div>
 
-
-            <div class="form-group">
-                <label>อีเมล</label>
-                <input type="email" placeholder="example@gmail.com">
-            </div>
-
-
-            <div class="form-row">
-
+                <!-- เลขบัตรประชาชน -->
                 <div class="form-group">
-                    <label>รหัสผ่าน</label>
-                    <input type="password" placeholder="รหัสผ่าน">
+                    <label>เลขบัตรประชาชน</label>
+                    <input
+                        type="text"
+                        placeholder="0-0000-00000-00-0">
                 </div>
 
+
+                <!-- สัญชาติ -->
                 <div class="form-group">
-                    <label>ยืนยันรหัสผ่าน</label>
-                    <input type="password" placeholder="ยืนยันรหัสผ่าน">
+                    <label>สัญชาติ</label>
+                    <input
+                        type="text"
+                        placeholder="สัญชาติ">
                 </div>
 
-            </div>
+
+                <!-- ศาสนา -->
+                <div class="form-group">
+                    <label>ศาสนา</label>
+                    <input
+                        type="text"
+                        placeholder="ศาสนา">
+                </div>
 
 
-            <div class="form-group">
-                <label>เบอร์โทร</label>
-                <input type="tel" placeholder="000-000-0000">
-            </div>
+                <!-- วันเกิด -->
+                <div class="form-group">
+                    <label>วันเกิด</label>
+                    <input type="date">
+                </div>
 
 
-            <div class="form-group">
-                <label>เลขบัตรประชาชน</label>
-                <input type="text" placeholder="0-0000-00000-00-0">
-            </div>
+                <!-- เพศ -->
+                <div class="form-group">
 
+                    <label>เพศ</label>
 
-            <div class="form-group">
-                <label>สัญชาติ</label>
-                <input type="text" placeholder="สัญชาติ">
-            </div>
+                    <div class="radio-group">
 
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender">
+                            ชาย
+                        </label>
 
-            <div class="form-group">
-                <label>ศาสนา</label>
-                <input type="text" placeholder="ศาสนา">
-            </div>
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender">
+                            หญิง
+                        </label>
 
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender">
+                            อื่นๆ
+                        </label>
 
-            <div class="form-group">
-                <label>วันเกิด</label>
-                <input type="date">
-            </div>
-
-
-            <div class="form-group">
-
-                <label>เพศ</label>
-
-                <div class="radio-group">
-
-                    <label>
-                        <input type="radio" name="gender">
-                        ชาย
-                    </label>
-
-                    <label>
-                        <input type="radio" name="gender">
-                        หญิง
-                    </label>
-
-                    <label>
-                        <input type="radio" name="gender">
-                        อื่นๆ
-                    </label>
+                    </div>
 
                 </div>
 
-            </div>
+
+                <!-- ที่อยู่ -->
+                <div class="form-group">
+
+                    <label>ที่อยู่</label>
+
+                    <textarea
+                        rows="4"
+                        placeholder="ที่อยู่"></textarea>
+
+                </div>
 
 
-            <div class="form-group">
+                <!-- ปุ่ม -->
+                <div class="form-button">
 
-                <label>ที่อยู่</label>
+                    <a href="login.php" class="login-link">
+                        มีบัญชีอยู่แล้ว? | เข้าสู่ระบบ
+                    </a>
 
-                <textarea
-                    rows="4"
-                    placeholder="ที่อยู่"></textarea>
+                    <button type="submit">
+                        ต่อไป
+                    </button>
 
-            </div>
+                </div>
 
+            </form>
 
-            <div class="form-button">
-    <a href="login.php" class="login-link">
-        มีบัญชีอยู่แล้ว? | เข้าสู่ระบบ
-    </a>
+        </div>
 
-    <button type="submit">ถัดไป</button>
-</div>
+    </div>
 
-            </div>
-
-        </form>
-
-</div>
-
-
-<?php include 'footer.php'; ?>
+    <?php include 'footer.php'; ?>
 
 </body>
 </html>
