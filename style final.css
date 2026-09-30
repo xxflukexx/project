@@ -824,3 +824,146 @@ label.upload-box p {
         box-sizing: border-box !important;
     }
 }
+/* =========================
+   MOBILE REGISTER + LOGIN
+   ========================= */
+@media (max-width: 700px) {
+
+    /* ---------- REGISTER ---------- */
+
+    .register-page {
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+
+    .register-box {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+
+    .register-box h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    /* จาก 2 ช่อง → 1 ช่อง */
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Radio */
+    .radio-group {
+        flex-wrap: wrap;
+        gap: 10px 20px;
+    }
+
+    /* กล่องอัปโหลด */
+    .upload-box {
+        width: 100% !important;
+        max-width: 100%;
+        height: 220px;
+        box-sizing: border-box;
+    }
+
+    .upload-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    label.upload-box p {
+        font-size: 20px;
+    }
+
+    /* ปุ่ม */
+    .form-button {
+        width: 100%;
+    }
+
+    .form-button .button-group {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .form-button button,
+    .form-button .back-button {
+        width: 90px;
+        height: 40px;
+    }
+
+
+    /* ---------- LOGIN ---------- */
+
+    .login-container {
+        width: calc(100% - 20px);
+        max-width: 100%;
+        height: auto;
+        min-height: 450px;
+        margin: 25px auto;
+        padding: 25px 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+
+    .login-container h1 {
+        font-size: 28px;
+    }
+
+    .username input,
+    .password input {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .login-container-bottom {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .login-container-bottom .btn-cancel,
+    .login-container-bottom .btn-submit {
+        width: 100%;
+        font-size: 18px;
+    }
+
+
+    /* ---------- ALERT ---------- */
+
+    .alert-container {
+        width: calc(100% - 30px);
+        max-width: 579px;
+        height: auto;
+        min-height: 280px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .alert-container h1 {
+        font-size: 45px;
+    }
+
+    .alert-container-bottom button {
+        width: 160px;
+        max-width: 100%;
+    }
+}
