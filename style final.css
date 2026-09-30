@@ -722,101 +722,105 @@ label.upload-box p {
   z-index: 9998;
 }
 
-@media (max-width: 600px) {
-
-  .form-row {
-    flex-direction: column;
-
-    gap: 0;
-  }
-
-  .register-box {
-    width: 95%;
-
-    padding: 20px;
-  }
-
-}
-
-.login-link {
-  margin-right: auto;
-  color: #aca5a1;
-  text-decoration: none;
-  font-size: 14px;
-}
 /* =========================
-   RESPONSIVE สำหรับมือถือ
+   MOBILE HOME PAGE
    ========================= */
+@media (max-width: 1000px) {
 
-@media (max-width: 600px) {
-
-    /* กันหน้าเว็บล้นออกด้านข้าง */
     html,
     body {
+        width: 100%;
         max-width: 100%;
         overflow-x: hidden;
     }
 
-    /* กล่องสมัคร */
-    .register-page {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 20px 10px;
-    }
-
-    .register-box {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        padding: 20px 15px;
-    }
-
-    /* ช่องที่อยู่ในแถวเดียวกัน ให้ลงมาเป็นแนวตั้ง */
-    .form-row {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .form-group {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* ช่องกรอกทุกชนิดไม่ให้ล้นจอ */
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* กล่องอัปโหลด */
-    .upload-box {
+    .banner {
         width: 100% !important;
-        max-width: 100%;
-        box-sizing: border-box;
+        height: auto !important;
+        display: block !important;
     }
 
-    /* รูปในกล่องอัปโหลด */
-    .upload-box img {
-        max-width: 100%;
-        height: auto;
+    /* กล่องหลัก */
+    .container {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 20px 0 0 0 !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
     }
 
-    /* ปุ่มย้อนกลับ + ต่อไป */
-    .form-button {
-        width: 100%;
-        box-sizing: border-box;
+    /* กล่องสาขา */
+    .box1 {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        margin: 0 0 20px 0 !important;
+        padding: 25px !important;
+        box-sizing: border-box !important;
     }
 
-    .form-button .button-group {
-        margin-left: auto;
+    /* รูปด้านขวา ให้ลงมาต่อข้างล่าง */
+    .box2 {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
     }
 
-    /* รูปภาพทั่วไปในเว็บ */
-    img {
-        max-width: 100%;
-        height: auto;
+    .box2 img {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        border-radius: 28px;
+    }
+
+    .box1 .head h2 {
+        font-size: 32px !important;
+    }
+
+    .dep-item {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .dep-item h4 {
+        font-size: 20px !important;
+    }
+
+    .dep-item img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    /* Timeline */
+    .timeline-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    .timeline {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .timeline-item {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .timeline-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 }
